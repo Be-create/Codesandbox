@@ -9,13 +9,13 @@ export const ComponentF=()=>{
      user =>{
        return (
         
-           <Codingcontext>
+           <Codingcontext.Consumer>
 {
   coding =>{
     return <div>User context is <span style={{color:"red"}}>{user}</span> likes <span style={{color:"red"}}>{coding}</span></div>
   }
 }
-           </Codingcontext>
+           </Codingcontext.Consumer>
          
        )
      }
