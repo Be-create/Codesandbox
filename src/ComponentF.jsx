@@ -12,7 +12,7 @@ export const ComponentF=()=>{
            <Codingcontext>
 {
   coding =>{
-    return <div>User context is {user} likes {coding}</div>
+    return <div>User context is <span style={{color:"red"}}>{user}</span> likes <span style={{color:"red"}}>{coding}</span></div>
   }
 }
            </Codingcontext>
