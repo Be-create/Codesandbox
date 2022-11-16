@@ -9,13 +9,13 @@ export const ComponentF=()=>{
      user =>{
        return (
         
-           <Codingcontext>
+           <Codingcontext.Consumer>
 {
   coding =>{
     return <div>User context is {user} likes {coding}</div>
   }
 }
-           </Codingcontext>
+           </Codingcontext.Consumer>
          
        )
      }
