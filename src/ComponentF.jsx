@@ -1,6 +1,8 @@
 import React from "react"
+import { useContext } from "react/cjs/react.development"
 import { Codingcontext, Usercontext } from "./App"
-
+let user2 = useContext(Usercontext)
+let coding2 = useContext(Codingcontext)
 export const ComponentF=()=>{
   return(
     <div>
@@ -21,6 +23,8 @@ export const ComponentF=()=>{
      }
    }
     </Usercontext.Consumer>
+    
+    <h1>{user2}-{coding2}</h1>
     </div>
   )
 }
